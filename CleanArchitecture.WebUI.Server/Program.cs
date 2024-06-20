@@ -8,9 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents();
 
 var app = builder.Build();
-builder.Services.AddRazorComponents();
-builder.Services.AddApplication();
-builder.Services.AddInfrastructure();
+builder.Services.AddRazorComponents(); // Add for RazorComponents
+builder.Services.AddApplication(); // Add for Application
+builder.Services.AddInfrastructure(); // Add for Infrastructure
 
 
 
